@@ -1,6 +1,4 @@
 
-/* Lab 2 - Custom CSS */
-
 /* Navbar menu for mobile screens */
 #nav-toggle:checked ~ .navbar-collapse {
     display: block !important;
