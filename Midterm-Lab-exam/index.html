@@ -149,8 +149,43 @@
   </details>
 </div>
       <div class="tools d-flex align-items-center">
-        <input type="search" placeholder="Search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="14" cy="10" r="6"/><path d="M10 14l-6 6"/></svg><a href="#home" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></a>
-      </div>
+
+  <input type="search" placeholder="Search" aria-label="Search">
+
+  <svg viewBox="0 0 24 24">
+    <circle cx="14" cy="10" r="6"/>
+    <path d="M10 14l-6 6"/>
+  </svg>
+
+  <div class="cart-container">
+    <button type="button" id="cart-toggle"
+            class="cart-toggle" aria-label="Open cart"
+            aria-expanded="false" aria-controls="mini-cart">
+
+      <svg viewBox="0 0 24 24">
+        <path d="M6 8h12l1 12H5L6 8z"/>
+        <path d="M9 8V6a3 3 0 016 0v2"/>
+      </svg>
+
+      <span id="cart-badge">0</span>
+    </button>
+
+    <div id="mini-cart" class="mini-cart" hidden>
+      <h3>Shopping Cart</h3>
+
+      <ul id="cart-items"></ul>
+
+      <p class="cart-total">
+        Total: Rs. <span id="cart-total">0</span>
+      </p>
+
+      <a href="checkout.html" class="btn-dark-ess">
+        Checkout
+      </a>
+    </div>
+  </div>
+
+</div>
     </div>
   </nav>
 </header>
