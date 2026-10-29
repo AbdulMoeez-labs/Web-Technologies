@@ -18,12 +18,136 @@
   <nav class="navbar navbar-dark">
     <div class="container-fluid px-3 px-lg-4 gap-2">
       <a class="navbar-brand brand m-0" href="#home">ESSENTIA</a>
-      <ul class="navbar-nav flex-row order-3 order-md-0 w-100 w-md-auto justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#men">Men</a></li>
-        <li class="nav-item"><a class="nav-link" href="#women">Women</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kids">Kids</a></li>
-      </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+<label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+  &#9776;
+</label>
+
+<ul class="navbar-nav main-menu">
+  <li class="nav-item">
+    <a class="nav-link" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#men">Men</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#women">Women</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#kids">Kids</a>
+  </li>
+
+  <li class="nav-item mega-item">
+    <a class="nav-link mega-trigger" href="#shop-categories">
+      Shop by Category
+    </a>
+
+    <div class="mega-panel" id="shop-categories">
+      <div class="mega-column">
+        <h3>Men</h3>
+        <ul>
+          <li><a href="#men">Polos</a></li>
+          <li><a href="#men">T-Shirts</a></li>
+          <li><a href="#men">Jeans</a></li>
+          <li><a href="#men">Trousers</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-column">
+        <h3>Women</h3>
+        <ul>
+          <li><a href="#women">Kurtas</a></li>
+          <li><a href="#women">Tops</a></li>
+          <li><a href="#women">Trousers</a></li>
+          <li><a href="#women">Hoodies</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-column">
+        <h3>Kids</h3>
+        <ul>
+          <li><a href="#kids">Boys T-Shirts</a></li>
+          <li><a href="#kids">Boys Jeans</a></li>
+          <li><a href="#kids">Girls Frocks</a></li>
+          <li><a href="#kids">Girls Hoodies</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-column">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="#home">New Arrivals</a></li>
+          <li><a href="#men">Men Collection</a></li>
+          <li><a href="#women">Women Collection</a></li>
+          <li><a href="#kids">Kids Collection</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-column">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#men">Men's Sale</a></li>
+          <li><a href="#women">Women's Sale</a></li>
+          <li><a href="#kids">Kids' Sale</a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div class="mobile-categories">
+  <details>
+    <summary>Men</summary>
+    <ul>
+      <li><a href="#men">Polos</a></li>
+      <li><a href="#men">T-Shirts</a></li>
+      <li><a href="#men">Jeans</a></li>
+      <li><a href="#men">Trousers</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Women</summary>
+    <ul>
+      <li><a href="#women">Kurtas</a></li>
+      <li><a href="#women">Tops</a></li>
+      <li><a href="#women">Trousers</a></li>
+      <li><a href="#women">Hoodies</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Kids</summary>
+    <ul>
+      <li><a href="#kids">Boys T-Shirts</a></li>
+      <li><a href="#kids">Boys Jeans</a></li>
+      <li><a href="#kids">Girls Frocks</a></li>
+      <li><a href="#kids">Girls Hoodies</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Collections</summary>
+    <ul>
+      <li><a href="#home">New Arrivals</a></li>
+      <li><a href="#men">Men Collection</a></li>
+      <li><a href="#women">Women Collection</a></li>
+      <li><a href="#kids">Kids Collection</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Shop</summary>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#men">Men's Sale</a></li>
+      <li><a href="#women">Women's Sale</a></li>
+      <li><a href="#kids">Kids' Sale</a></li>
+    </ul>
+  </details>
+</div>
       <div class="tools d-flex align-items-center">
         <input type="search" placeholder="Search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="14" cy="10" r="6"/><path d="M10 14l-6 6"/></svg><a href="#home" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></a>
       </div>
@@ -41,29 +165,45 @@
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Polos</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-1(1).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Classic Pique Polo</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-2(out).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Contrast Collar Polo</a></h3><div class="price"><span class="now">Rs. 1,645</span><del>Rs. 3,290</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-1(1).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Classic Pique Polo</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-2(out).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Contrast Collar Polo</a></h3><div class="price"><span class="now">Rs. 1,645</span><del>Rs. 3,290</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">T-Shirts</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-2-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Basic Crew Neck Tee</a></h3><div class="price"><span class="now">Rs. 995</span><del>Rs. 1,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Graphic Tee</a></h3><div class="price"><span class="now">Rs. 1,245</span><del>Rs. 2,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-2-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Basic Crew Neck Tee</a></h3><div class="price"><span class="now">Rs. 995</span><del>Rs. 1,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Graphic Tee</a></h3><div class="price"><span class="now">Rs. 1,245</span><del>Rs. 2,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Jeans</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Jeans-main.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Fit Jeans</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/baggy-in.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Baggy Blue Jeans</a></h3><div class="price"><span class="now">Rs. 2,745</span><del>Rs. 5,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Jeans-main.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Fit Jeans</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/baggy-in.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Baggy Blue Jeans</a></h3><div class="price"><span class="now">Rs. 2,745</span><del>Rs. 5,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Trousers</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/str-trs-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Drawstring Trousers</a></h3><div class="price"><span class="now">Rs. 1,745</span><del>Rs. 3,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/plt-trs-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Pleated Trousers</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/str-trs-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Drawstring Trousers</a></h3><div class="price"><span class="now">Rs. 1,745</span><del>Rs. 3,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/plt-trs-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Pleated Trousers</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
     </div></div>
@@ -77,29 +217,45 @@
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Kurtas</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/prt-lawn-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Printed Lawn Kurta</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/emb-kurta-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Embroidered Kurta</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/prt-lawn-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Printed Lawn Kurta</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/emb-kurta-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Embroidered Kurta</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Tops</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/knit-top-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Ribbed Knit Top</a></h3><div class="price"><span class="now">Rs. 1,145</span><del>Rs. 2,290</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/satin-top-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Satin Blouse</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/knit-top-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Ribbed Knit Top</a></h3><div class="price"><span class="now">Rs. 1,145</span><del>Rs. 2,290</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/satin-top-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Satin Blouse</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Trousers</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/str-W-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Cut Trousers</a></h3><div class="price"><span class="now">Rs. 1,645</span><del>Rs. 3,290</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/wide-w-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Wide Leg Trousers</a></h3><div class="price"><span class="now">Rs. 1,845</span><del>Rs. 3,690</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/str-W-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Cut Trousers</a></h3><div class="price"><span class="now">Rs. 1,645</span><del>Rs. 3,290</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/wide-w-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Wide Leg Trousers</a></h3><div class="price"><span class="now">Rs. 1,845</span><del>Rs. 3,690</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Hoodies</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/zip-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Fleece Zip Hoodie</a></h3><div class="price"><span class="now">Rs. 2,245</span><del>Rs. 4,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/w-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Hoodie</a></h3><div class="price"><span class="now">Rs. 2,145</span><del>Rs. 4,290</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/zip-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Fleece Zip Hoodie</a></h3><div class="price"><span class="now">Rs. 2,245</span><del>Rs. 4,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/w-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Hoodie</a></h3><div class="price"><span class="now">Rs. 2,145</span><del>Rs. 4,290</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
     </div></div>
@@ -113,29 +269,45 @@
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Boys T-Shirts</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Graphic Tee</a></h3><div class="price"><span class="now">Rs. 795</span><del>Rs. 1,590</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-polo-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Polo Shirt</a></h3><div class="price"><span class="now">Rs. 945</span><del>Rs. 1,890</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Graphic Tee</a></h3><div class="price"><span class="now">Rs. 795</span><del>Rs. 1,590</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-polo-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Polo Shirt</a></h3><div class="price"><span class="now">Rs. 945</span><del>Rs. 1,890</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Boys Jeans</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-jeans-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Denim Jeans</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-j-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Jogger Pants</a></h3><div class="price"><span class="now">Rs. 1,145</span><del>Rs. 2,290</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-jeans-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Denim Jeans</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-j-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Jogger Pants</a></h3><div class="price"><span class="now">Rs. 1,145</span><del>Rs. 2,290</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">Girls Frocks</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-frock-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Printed Frock</a></h3><div class="price"><span class="now">Rs. 1,345</span><del>Rs. 2,690</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-ruffle-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Ruffle Dress</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-frock-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Printed Frock</a></h3><div class="price"><span class="now">Rs. 1,345</span><del>Rs. 2,690</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-ruffle-out.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Ruffle Dress</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
       <div class="col-12 col-lg-6">
         <h2 class="cat-title">GirlsHoodies</h2>
         <div class="row row-cols-2 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Fleece Hoodie</a></h3><div class="price"><span class="now">Rs. 1,595</span><del>Rs. 3,190</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-sweat-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Knit Sweater</a></h3><div class="price"><span class="now">Rs. 1,395</span><del>Rs. 2,790</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Fleece Hoodie</a></h3><div class="price"><span class="now">Rs. 1,595</span><del>Rs. 3,190</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-sweat-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Knit Sweater</a></h3><div class="price"><span class="now">Rs. 1,395</span><del>Rs. 2,790</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
       </div>
     </div></div>
@@ -165,14 +337,31 @@
     <section class="section reveal"><div class="container">
       <h2 class="section-title">New Arrivals</h2>
       <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-md-4">
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-1(1).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Classic Pique Polo</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Jeans-main.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Fit Jeans</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Graphic Tee</a></h3><div class="price"><span class="now">Rs. 1,245</span><del>Rs. 2,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/prt-lawn-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Printed Lawn Kurta</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/zip-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Fleece Zip Hoodie</a></h3><div class="price"><span class="now">Rs. 2,245</span><del>Rs. 4,490</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Graphic Tee</a></h3><div class="price"><span class="now">Rs. 795</span><del>Rs. 1,590</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-frock-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Printed Frock</a></h3><div class="price"><span class="now">Rs. 1,345</span><del>Rs. 2,690</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
-        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Fleece Hoodie</a></h3><div class="price"><span class="now">Rs. 1,595</span><del>Rs. 3,190</del></div><label class="btn-dark-ess" for="cart-pop">Add to Cart</label></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Polo-1(1).webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Classic Pique Polo</a></h3><div class="price"><span class="now">Rs. 1,495</span><del>Rs. 2,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/Jeans-main.jpg')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Straight Fit Jeans</a></h3><div class="price"><span class="now">Rs. 2,495</span><del>Rs. 4,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Oversized Graphic Tee</a></h3><div class="price"><span class="now">Rs. 1,245</span><del>Rs. 2,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/prt-lawn-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Printed Lawn Kurta</a></h3><div class="price"><span class="now">Rs. 1,995</span><del>Rs. 3,990</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/zip-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Fleece Zip Hoodie</a></h3><div class="price"><span class="now">Rs. 2,245</span><del>Rs. 4,490</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/kids-tee-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Boys Graphic Tee</a></h3><div class="price"><span class="now">Rs. 795</span><del>Rs. 1,590</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+</article>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-frock-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Girls Printed Frock</a></h3><div class="price"><span class="now">Rs. 1,345</span><del>Rs. 2,690</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
+        <div class="col"><article class="product-card"><a class="card-wrap d-block" href="product.html"><span class="thumb" style="--img:url('images/g-hood-out.webp')"><span class="badge-sale">-50%</span></span></a><h3 class="name"><a href="product.html">Kids Fleece Hoodie</a></h3><div class="price"><span class="now">Rs. 1,595</span><del>Rs. 3,190</del></div><button type="button" class="btn-dark-ess add-to-cart">
+  Add to Cart
+</button></article></div>
       </div>
     </div></section>
 

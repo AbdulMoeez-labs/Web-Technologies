@@ -140,3 +140,144 @@ del { color: var(--muted); font-weight: 400; font-size: .85em; margin-left: .4re
   .price { font-size: .82rem; }
   .btn-dark-ess { font-size: .68rem; padding: .6rem .3rem; }
 }
+
+:root {
+  --accent: hsl(14, 70%, 45%);
+}
+
+.site-header {
+  z-index: 9999;
+  overflow: visible;
+}
+
+.navbar {
+  position: relative;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mega-item {
+  position: static;
+}
+
+.mega-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: #111;
+  padding: 25px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  z-index: 10000;
+}
+
+.mega-item:hover .mega-panel,
+.mega-item:focus-within .mega-panel {
+  display: grid;
+}
+
+.mega-column h3 {
+  font-size: 16px;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.mega-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-column li {
+  margin-bottom: 10px;
+}
+
+.mega-column a {
+  color: #222;
+  font-size: 14px;
+}
+
+.mega-column a:hover,
+.mega-column a:focus {
+  color: var(--accent);
+}
+
+.menu-toggle,
+.hamburger,
+.mobile-categories {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .hamburger {
+    display: block;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .main-menu {
+    display: none;
+    order: 4;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .menu-toggle:checked ~ .main-menu {
+    display: flex;
+  }
+
+  .mega-item {
+    display: none;
+  }
+
+  .mobile-categories {
+    display: none;
+    order: 5;
+    width: 100%;
+    color: white;
+  }
+
+  .menu-toggle:checked ~ .mobile-categories {
+    display: block;
+  }
+
+  .mobile-categories details {
+    border-bottom: 1px solid #555;
+    padding: 12px;
+  }
+
+  .mobile-categories summary {
+    cursor: pointer;
+    color: white;
+  }
+
+  .mobile-categories ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .mobile-categories li {
+    margin: 8px 0;
+  }
+
+  .mobile-categories a {
+    color: white;
+  }
+}
+
+@media (min-width: 602px) {
+  .main-menu {
+    display: flex;
+  }
+}
