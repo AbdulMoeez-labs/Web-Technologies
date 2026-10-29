@@ -281,3 +281,93 @@ del { color: var(--muted); font-weight: 400; font-size: .85em; margin-left: .4re
     display: flex;
   }
 }
+.checkout-form {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.checkout-form fieldset {
+  border: 1px solid #ddd;
+  padding: 25px;
+  min-width: 0;
+}
+
+.checkout-form legend {
+  float: none;
+  width: auto;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background: white;
+}
+
+.form-row small {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-row input:user-invalid,
+.form-row select:user-invalid {
+  border: 2px solid red;
+}
+
+.form-row input:user-invalid + small,
+.form-row select:user-invalid + small {
+  display: block;
+}
+
+.checkout-submit {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: var(--accent);
+  color: white;
+  border: 0;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 602px) {
+  .checkout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-row {
+    grid-template-columns: 100px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .form-row label {
+    padding-top: 12px;
+  }
+}
