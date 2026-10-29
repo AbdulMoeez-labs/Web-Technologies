@@ -1,4 +1,4 @@
-/* ===== ESSENTIA - styles.css (Bootstrap 5 handles grid + navbar) ===== */
+/* ---- ESSENTIA - styles.css (Bootstrap 5 handles grid + navbar) ---- */
 :root { --navy:#161a2d; --cream:#f1eee8; --ink:#111; --muted:#6b6b6b; --line:#e8e8e8; --sale:#e8151b; --soft:#f6f5f3; }
 html { scroll-behavior: smooth; }
 body { font-family: "Poppins", Arial, sans-serif; color: var(--ink); margin: 0; }
