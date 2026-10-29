@@ -15,8 +15,8 @@ buttons.forEach(button => {
 
     const name = card.querySelector(".name").textContent.trim();
 
-    const priceText = card.querySelector(".price .now").textContent;
-    const price = Number(priceText.replace(/[^0-9.]/g, ""));
+    const priceText = card.querySelector(".price .now").textContent.trim();
+const price = parseInt(priceText.replace(/[^\d]/g, ""), 10);
 
     const count = cart.filter(item => item.name === name).length;
 
